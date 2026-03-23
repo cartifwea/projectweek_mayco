@@ -1,0 +1,46 @@
+.custom-navbar {
+    background-color: rgb(148, 38, 36);
+}
+
+.navbar-line {
+    border-bottom: 10px solid rgb(84, 15, 18);
+}
+
+.square {
+    width: 1000px;
+    height: 100px;
+    background-color: rgb(84, 15, 18);
+    
+    border-top: 2px solid rgb(40, 7, 9);
+    border-left: 2px solid rgb(40, 7, 9);
+
+    border-bottom: 2px solid rgb(201, 53, 51);
+    border-right: 2px solid rgb(201, 53, 51);
+
+    box-shadow: inset 1px 1px 2px black;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@font-face {
+    font-family: xpfont;
+    src: url("fonts/windows-xp-tahoma.otf") format("opentype");
+}
+
+body {
+    font-family: xpfont;
+}
+
+body {
+    font-family: xpfont !important;
+}
+
+.navbar-font {
+    font-family: xpfont !important;
+    font-size: 50px;
+    text-shadow: 3px 3px black;
+}
