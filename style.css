@@ -7,7 +7,7 @@
 }
 
 .square {
-    width: 1000px;
+    width: 850px;
     height: 100px;
     background-color: rgb(84, 15, 18);
     
@@ -18,12 +18,17 @@
     border-right: 2px solid rgb(201, 53, 51);
 
     box-shadow: inset 1px 1px 2px black;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .logo-section {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 @font-face {
@@ -32,15 +37,35 @@
 }
 
 body {
-    font-family: xpfont;
+    font-family: xpfont !important;
+    color: rgb(130, 155, 155);
 }
 
-body {
-    font-family: xpfont !important;
-}
+
 
 .navbar-font {
     font-family: xpfont !important;
     font-size: 50px;
     text-shadow: 3px 3px black;
+}
+
+.news-text {
+    position: absolute;
+    white-space: nowrap;
+    color: rgb(130, 155, 155);
+    font-size: 60px;
+    text-shadow: 2px 2px black;
+    animation: moveNews 20s linear infinite;
+}
+
+@keyframes moveNews {
+
+    0% {
+        left: 550%;
+    }
+
+    100% {
+        left: -550%;
+    }
+
 }
