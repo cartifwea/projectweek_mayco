@@ -81,6 +81,25 @@ body {
     border-right: 3px solid #2b0000;
 
     border-radius: 8px;
+
+    animation: popupOpen 0.5s ease;
+}
+
+@keyframes popupOpen {
+
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .product-header {
@@ -163,5 +182,129 @@ body {
     cursor: pointer;
     font-family: xpfont !important;
     font-size: 20px;
+    text-shadow: 3px 3px black;
+}
+
+.cart-item {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.remove-btn {
+
+    background: darkred;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.popup-ad {
+
+    position: fixed;
+
+    width: 320px;
+    height: 220px;
+
+    background-color: #3a3a3a;
+
+    border-top: 3px solid #ff4d4d;
+    border-left: 3px solid #ff4d4d;
+    border-bottom: 3px solid #2b0000;
+    border-right: 3px solid #2b0000;
+
+    animation: popupOpen 0.4s ease;
+
+    box-shadow: 5px 5px black;
+}
+
+.popup-header {
+
+    background: rgb(148, 38, 36);
+    color: white;
+
+    padding: 6px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-body {
+
+    padding: 10px;
+    text-align: center;
+}
+
+.popup-body img {
+
+    width: 250px;
+    height: auto;
+}
+
+.close-btn {
+
+    background: darkred;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.music-corner {
+    margin-top: 100px;
+}
+
+.music-btn {
+
+    background: rgb(148, 38, 36);
+    color: white;
+
+    padding: 15px 40px;
+
+    text-decoration: none;
+
+    border-top: 3px solid #ff4d4d;
+    border-left: 3px solid #ff4d4d;
+    border-bottom: 3px solid #2b0000;
+    border-right: 3px solid #2b0000;
+
+    font-size: 22px;
+
+    text-shadow: 2px 2px black;
+}
+
+.music-btn:hover {
+
+    background: rgb(84, 15, 18);
+}
+
+#bg-video {
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    object-fit: cover;
+
+    z-index: -1;
+}
+
+.music-overlay {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: white;
+
     text-shadow: 3px 3px black;
 }
